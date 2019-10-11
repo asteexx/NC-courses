@@ -12,8 +12,94 @@
   <body>
 
 
+<div id="logo-non-white" title="Profile">Profile!</div>
 
 
+<div class="Profile welcome message">
+  <div class="container">
+    <h1 class="display-4">Welcome to your profile!</h1>
+    <p class="lead"></p>
+  </div>
+</div>
+
+<div class="container bg-warning">
+		
+
+<ul class="nav nav-tabs"  id="myTab" role="tablist">
+  <li class="nav-item " >
+    <a class="nav-link active" id="info-tab" data-toggle="tab" href="#info" role="tab" aria-controls="info" aria-selected="true">Personal information</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="chanels-tab" data-toggle="tab" href="#chanels" role="tab" aria-controls="chanels" aria-selected="false">My chanels</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="balance-tab" data-toggle="tab" href="#balance" role="tab" aria-controls="balance" aria-selected="false">Balance</a>
+  </li>
+</ul>
+
+</div>
+
+<!--About personal-->
+
+<div class="container" id="navigation links">
+
+<hr>
+<div class="form-group">
+
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="info" role="tabpanel" aria-labelledby="info-tab">
+
+
+  <form>
+    <div class="col">
+    	<label for="formGroupExampleInput">First name</label>
+      <input type="text" class="form-control" placeholder="Please enter your first name">
+    </div>
+
+    <div class="col">
+    	<label for="formGroupExampleInput2">Last name</label>
+      <input type="text" class="form-control" placeholder="Please enter your last name">
+    </div>
+
+<div class="col">
+    	<label for="formGroupExampleInput">Phone number</label>
+      <input type="tel" pattern="[+][0-9]{3} [0-9]{2} [0-9]{3} [0-9]{2} [0-9]{2}" class="form-control" placeholder="+375 11 111 11 11">
+      <hr>
+    </div>
+
+<form>
+
+ <div class="form-row align-items-center">
+    <div class="col-auto my-1">
+      <label class="mr-sm-2" for="inlineFormCustomSelect">Select gender</label>
+      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+        <option selected disabled="Choose yours one">Choose yours one</option>
+        <option value="1">Male</option>
+        <option value="2">Female</option>
+        <option value="3">Other</option>
+      </select>
+    </div>
+
+  </div>
+</form>
+</div>
+		<!--About chanels-->
+  <div class="tab-pane fade" id="chanels" role="tabpanel" aria-labelledby="chanels-tab">
+
+<hr>
+  All active subscriptions
+
+</div>
+		<!--About balance-->
+  <div class="tab-pane fade" id="balance" role="tabpanel" aria-labelledby="balance-tab">
+
+  <hr>
+   Donate first!
+
+</div>
+</div>
+
+</div>
 
 
 
