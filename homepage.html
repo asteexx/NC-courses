@@ -28,8 +28,8 @@
     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
   </div>
   <div class="form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    <input type="checkbox" class="form-check-input" id="rememberMeCheck">
+    <label class="form-check-label" for="rememberMeCheck">Remember me</label>
   </div>
   <button type="submit" class="btn btn-primary">Log in</button>
 </form>
@@ -54,6 +54,12 @@
 
       			<!-- Inside Modal info-->
         <form>
+        	  <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">Name</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="inputName"  placeholder="Name">
+    </div>
+  </div>
   <div class="form-group row">
     <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
     <div class="col-sm-10">
@@ -72,29 +78,140 @@
       <input type="password" class="form-control" id="confirmPassword3" placeholder="Confirm password">
     </div>
   </div>
+
   <fieldset class="form-group">
-    <div class="row">
-      <legend class="col-form-label col-sm-2 pt-0">Role</legend>
-      <div class="col-sm-10">
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-          <label class="form-check-label" for="gridRadios1">
-            Customer
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-          <label class="form-check-label" for="gridRadios2">
-            Seller
-          </label>
-        </div>
-       
-      </div>
+<div class="form-row align-items-center">
+    <div class="col-auto my-1">
+      <label class="mr-sm-2" for="inlineFormCustomSelect">Select role</label>
+      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+        <option selected disabled="Choose yours one">Choose yours one</option>
+        <option value="1">Customer</option>
+        <option value="2">Seller</option>
+      </select>
     </div>
+
+<hr>
+
+							<!--Card Input-->
+
+<div class="container">
+<div class="js_payment_item_card">
+
+<form action="start_payment" method="post" class="js_card-form" data-cards="{&quot;card-x187153c527d7fc78d191eeb1&quot;:{&quot;number&quot;:&quot;539214****6735&quot;,&quot;name&quot;:&quot;&quot;,&quot;id&quot;:&quot;x187153c527d7fc78d191eeb1&quot;}}">
+
+	<input type="hidden" name="payment_method" value="new_card">
+	<input type="hidden" name="card_number" id="card_number_hid">
+	<input type="hidden" name="trust_payment_id" value="5da2e7c7792ab178bfb0415d">
+	<input type="hidden" name="purchase_token" value="52a8002603750adc4480cf9b785ad4ef">
+	<input type="hidden" name="xrf_token" value="2be0e75359e636c22b24019cc0d78a8aafb74578ec100a8ea09096005f7f4807">
+
+	<div class="card shaker">
+
+		<div class="card_front">
+
+			<div class="card_front-inner">
+
+				<span class="card_number-label">Card number</span>
+
+				<span class="card_number">
+					<span class="card_number-input">
+						<div class="input">
+							<input type="text" placeholder="1234 5678 9012 3456789" class="input_field" data-value="" maxlength="16" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="off" tabindex="1">
+
+						</div>
+					</span>
+				</span>
+
+				<hr>
+
+				<span class="card_valid">
+					<span class="card_valid-inner">
+						<span class="card_valid-label">Walid thru</span>
+
+						<span class="card_valid-date flip-error">
+							<div class="input">
+								<input type="text" placeholder="mm" class="input_field" data-value="" name="expiration_month" maxlength="2" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="off" tabindex="2">
+						
+
+						<span class="card_valid-separator">/</span>
+						
+							<input type="text" placeholder="yy" class="input_field" data-value="" name="expiration_year" maxlength="2" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="off" tabindex="3">
+						
+						</div>
+					</span>
+				</span>
+			</span>
+						<hr>
+
+			<span class="card_owner">
+				<div class="input">
+					<span class="card_valid-label">CardHolder</span>
+					<input type="text" placeholder="IVAN IVANOV" class="input_field" data-value="" name="cardholder" maxlength="200" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="off" tabindex="4">
+				</div>
+			</span>
+
+			<span class="card_logos card__empty">
+				<i class="card-icon card_maestro-icon">
+					
+				</i>
+				<i class="card-icon card_mastercard-icon">
+					
+				</i>
+
+				<i class="card-icon card_visa-icon">
+					
+				</i>
+				<i class="card-icon card_mir-icon">
+					
+				</i>
+				<i class="card-icon card_uzcard-icon">
+					
+				</i>
+			</span>
+		</div>
+	</div>
+
+<hr>
+	<div class="card_back">
+		<i class="card_magnet-line"></i>
+
+		<div class="card_back-inner">
+			<span class="card_cvc-label">CVC/CVV <i class="card_cvc-help-icon">?<span class="informer">
+				<i class="informer_arrow">
+					<i class="informer_arrow-inner"></i>
+				</i>
+
+				<span class="informer_inner">
+					<span class="informer_caption">CVC/CVV — sequrity code.</span>
+					<!--<span class="informer_text"> Нужен для подтверждения подлинности вашей карты</span>  -->
+				</span>
+			</span>
+		</i>
+	</span>
+	<span class="card_cvc-field flip-error">
+		<div class="input">
+			<input type="password" placeholder="000" class="input_field" data-value="" name="cvn" maxlength="3" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="off" tabindex="5">
+		</div>
+	</span>
+	<span class="card_cvc-note">Three diigits on the backside of your card</span>
+</div>
+</div>
+</div>
+<input type="hidden" name="template_tag">
+</form>
+</div>
+
+</div>
+
+
   </fieldset>
+
 </form>
 
       </div>
+
+<!--Card form end-->
+
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         <button type="button" class="btn btn-success">Create new profile</button>
@@ -176,5 +293,10 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
+
+<!--Card Scripts-->
+<script src="0-18-38/js/c9f5aeeca3ad37bf2aa006139b935f0a.js"></script>
+<script src="0-18-38/js/aadae3f8e5f3b4c3e8f4b90baf299c2e.js"></script>
+
   </body>
 </html>
