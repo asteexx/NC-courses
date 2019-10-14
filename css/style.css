@@ -1,0 +1,50 @@
+body{
+
+	background-color: #A5AAAB;
+	color: #5B1414
+
+}		
+
+.container-head{
+	width: 80%;
+	margin:auto;
+	overflow: hidden;
+
+}
+
+.container-head h1{
+	
+	color: #41A0AF;
+	font-family: "Lucida Console", Monaco, monospace;
+font-size: 33px;
+letter-spacing: 0.4px;
+word-spacing: 6px;
+color: #C0FFED;
+font-weight: 400;
+text-decoration: none solid rgb(68, 68, 68);
+font-style: normal;
+font-variant: small-caps;
+text-transform: none; 
+}
+
+.form-group1{
+	width: 50%;
+	margin-top: 5px;
+	overflow: hidden;
+
+}
+.form-check1{
+	width: 50%;
+	margin-top: 5px;
+	margin-left: 23px;
+	overflow: hidden;
+}
+
+#exampleModalCenter{
+	background-color: #3C323E;
+	background-origin: 
+}
+
+#form input{
+	color: pink;
+}
